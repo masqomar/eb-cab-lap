@@ -1,20 +1,20 @@
 @extends('layouts.app')
 
-@section('title', __('Pemasukan'))
+@section('title', __('Pengeluaran'))
 
 @section('content')
     <div class="page-heading">
         <div class="page-title">
             <div class="row">
                 <div class="col-12 col-md-8 order-md-1 order-last">
-                    <h3>{{ __('Pemasukan') }}</h3>
+                    <h3>{{ __('Pengeluaran') }}</h3>
                     <p class="text-subtitle text-muted">
-                        {{ __('Below is a list of all Pemasukan.') }}
+                        {{ __('Below is a list of all Pengeluaran.') }}
                     </p>
                 </div>
                 <x-breadcrumb>
                     <li class="breadcrumb-item"><a href="/">{{ __('Dashboard') }}</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">{{ __('Pemasukan') }}</li>
+                    <li class="breadcrumb-item active" aria-current="page">{{ __('Pengeluaran') }}</li>
                 </x-breadcrumb>
             </div>
         </div>
@@ -44,7 +44,6 @@
 											<th>{{ __('Tanggal') }}</th>
 											<th>{{ __('Jumlah') }}</th>
 											<th>{{ __('Keterangan') }}</th>
-											<th>{{ __('Tipe') }}</th>
 											<th>{{ __('Untuk Akun') }}</th>
 											<th>{{ __('Dari Kas') }}</th>
                                             <th>{{ __('Action') }}</th>
@@ -93,10 +92,6 @@
 				{
                     data: 'description',
                     name: 'description',
-                },
-				{
-                    data: 'transaction_type',
-                    name: 'transaction_type',
                 },
 				{
                     data: 'account_type',

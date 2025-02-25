@@ -44,7 +44,6 @@
 											<th>{{ __('Tanggal') }}</th>
 											<th>{{ __('Jumlah') }}</th>
 											<th>{{ __('Keterangan') }}</th>
-											<th>{{ __('Tipe') }}</th>
 											<th>{{ __('Dari Akun') }}</th>
 											<th>{{ __('Untuk Kas') }}</th>
                                             <th>{{ __('Action') }}</th>
@@ -93,10 +92,6 @@
 				{
                     data: 'description',
                     name: 'description',
-                },
-				{
-                    data: 'transaction_type',
-                    name: 'transaction_type',
                 },
 				{
                     data: 'account_type',

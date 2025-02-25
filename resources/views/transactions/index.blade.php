@@ -48,9 +48,6 @@
 											<th>{{ __('From Cash Type') }}</th>
 											<th>{{ __('To Cash Type') }}</th>
 											<th>{{ __('Account Type') }}</th>
-											<th>{{ __('Dk') }}</th>
-                                            <th>{{ __('Created At') }}</th>
-                                            <th>{{ __('Updated At') }}</th>
                                             <th>{{ __('Action') }}</th>
                                         </tr>
                                     </thead>
@@ -112,19 +109,7 @@
                 },
 				{
                     data: 'account_type',
-                    name: 'account_type.code'
-                },
-				{
-                    data: 'dk',
-                    name: 'dk',
-                },
-                {
-                    data: 'created_at',
-                    name: 'created_at'
-                },
-                {
-                    data: 'updated_at',
-                    name: 'updated_at'
+                    name: 'account_type'
                 },
                 {
                     data: 'action',

@@ -33,7 +33,7 @@ class TransactionController extends Controller implements HasMiddleware
     public function index(): View|JsonResponse
     {
         if (request()->ajax()) {
-            $transactions = Transaction::with(['branch:id,name', 'from_cash_type:id', 'to_cash_type:id', 'account_type:id,code', ]);
+            $transactions = Transaction::with(['branch:id,name', 'from_cash_type:id', 'to_cash_type:id', 'account_type:id,name', ]);
 
             return DataTables::of($transactions)
                 ->addColumn('description', function($row) {
@@ -46,7 +46,7 @@ class TransactionController extends Controller implements HasMiddleware
                 })->addColumn('to_cash_type', function ($row) {
                     return $row?->to_cash_type?->id ?? '';
                 })->addColumn('account_type', function ($row) {
-                    return $row?->account_type?->code ?? '';
+                    return $row?->account_type?->name ?? '';
                 })->addColumn('action', 'transactions.include.action')
                 ->toJson();
         }

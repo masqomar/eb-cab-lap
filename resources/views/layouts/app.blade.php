@@ -1,7 +1,5 @@
-@include('layouts.header')
+@include ('layouts.header')
 
-<div id="main-content">
-    @yield('content')
-</div>
+@yield('content')
 
-@include('layouts.footer')
+@include ('layouts.footer')

@@ -16,8 +16,9 @@ class UserSeeder extends Seeder
         User::create([
             'name' => 'Admin',
             'email' => 'admin@admin.com',
+            'phone_number' => '98687767677',
             'email_verified_at' => now(),
-            'password' => '$2y$10$92IXUNpkjO0rOQ5byMi.Ye4oKoEa3Ro9llC/.og/at2.uheWG/igi', // password
+            'password' => '$2y$12$4ZkeUjs05B5G23rL.xxIvecNcQL4dGDnLHWPrj/wz1PHh5mCKn3nG', // password
             'remember_token' => Str::random(10),
         ]);
 

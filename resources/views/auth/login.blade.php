@@ -42,8 +42,8 @@
                     @csrf
 
                     <div class="form-group position-relative has-icon-left mb-4">
-                        <input type="text" class="form-control form-control-xl @error('email') is-invalid @enderror"
-                            name="email" autocomplete="email" placeholder="Email" required autofocus>
+                        <input type="text" class="form-control form-control-xl @error('phone_number') is-invalid @enderror"
+                            name="phone_number" autocomplete="phone_number" placeholder="Email / Nomor Telepon" required autofocus>
                         <div class="form-control-icon">
                             <i class="bi bi-person"></i>
                         </div>
